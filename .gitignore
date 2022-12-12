@@ -1,0 +1,5 @@
+.vscode
+.forceignore
+.sfdx/
+.vscode/
+config/
