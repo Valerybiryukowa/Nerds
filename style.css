@@ -1,0 +1,170 @@
+/* Variables */
+
+:root {
+    --basic-warm-grey: #EEEEEE;
+    --basic-white: #FFFFFF;
+    --basic-coral: #FB565A;
+    --basic-coral-undertone: #FB565A4D;
+    --basic-dark-grey: #4D4D4D;
+    --basic-black: #000000;
+    --basic-green: #00CA74;
+    --basic-yellow: #EFC849;
+}
+
+/* Global */
+
+body {
+    min-width: 960px;
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    color: var(--basic-black);
+    text-transform: lowercase;
+    background-color: var(--basic-white);
+    background-image: url("img/nerds-index-slide1 1.png");
+    background-position: top right;
+    background-repeat: no-repeat;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Main navigation */
+
+.main-navigation {
+    font-size: 16px;
+    line-height: 30px;
+    color: var(--basic-black);
+    background-color: transparent;
+}
+
+.main-navigation-wrapper {
+    background-color: var(--basic-white);
+}
+
+.site-navigation {
+    list-style: none;
+}
+
+.site-navigation-current a:not([href]) {
+    background-color: var(--basic-warm-grey);
+}
+
+/* User navigation */
+
+.site-navigation a,
+.login-basket a {
+    color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.login-basket a:hover,
+.login-basket a:focus {
+    background-color: var(--basic-coral);
+}
+
+/* Features */
+
+.features-list {
+list-style: none;
+}
+
+.feature-item {
+    text-align: left;
+}
+
+.feature-item h2 {
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 500;
+}
+
+.feature-item a {
+    background-color: var(--basic-coral);
+    text-transform: uppercase;
+}
+
+/* Services */
+
+.services {
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+}
+
+.services-list {
+    list-style: none;
+}
+
+.sevices-item {
+    text-align: right;
+}
+
+.services-item h3 {
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.services-item a {
+    line-height: 18px;
+    text-transform: uppercase;
+}
+
+.services-item-1 a {
+    background-color: var(--basic-coral);
+}
+
+.services-item-2 a {
+    background-color: var(--basic-green);
+}
+
+.services-item-3 a {
+    background-color: var(--basic-yellow);
+}
+
+/* About company */
+
+.company-list {
+    list-style: none;
+}
+
+.company-item h3 {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 500;
+}
+
+.company-item h4 {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Numbers */
+
+.numbers-list {
+    list-style: none;
+}
+
+.numbers-item {
+    text-transform: uppercase;
+    text-align: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+.number p {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 64px;
+}
