@@ -24,9 +24,7 @@ body {
     color: var(--basic-black);
     text-transform: lowercase;
     background-color: var(--basic-white);
-    background-image: url("img/nerds-index-slide1 1.png");
     background-position: top right;
-    background-repeat: no-repeat;
 }
 
 a {
@@ -44,11 +42,11 @@ img {
     font-size: 16px;
     line-height: 30px;
     color: var(--basic-black);
-    background-color: transparent;
+    background-color: var(--basic-warm-grey);
 }
 
 .main-navigation-wrapper {
-    background-color: var(--basic-white);
+    background-color: var(--basic-warm-grey);
 }
 
 .site-navigation {
@@ -75,6 +73,10 @@ img {
 
 /* Features */
 
+.features {
+    background-color: var(--basic-warm-grey);
+}
+
 .features-list {
 list-style: none;
 }
@@ -89,17 +91,16 @@ list-style: none;
     font-weight: 500;
 }
 
-.feature-item a {
+.feature-item button {
     background-color: var(--basic-coral);
     text-transform: uppercase;
 }
 
-/* Services */
-
-.services {
-    color: var(--basic-black);
-    background-color: var(--basic-white);
+.wrapper {
+    background-color: var(--basic-warm-grey);
 }
+
+/* Services */
 
 .services-list {
     list-style: none;
@@ -116,21 +117,22 @@ list-style: none;
     font-weight: 700;
 }
 
-.services-item a {
+.services-item-1 {
+    background-color: var(--basic-coral);
     line-height: 18px;
     text-transform: uppercase;
 }
 
-.services-item-1 a {
-    background-color: var(--basic-coral);
-}
-
-.services-item-2 a {
+.services-item-2 {
     background-color: var(--basic-green);
+    line-height: 18px;
+    text-transform: uppercase;
 }
 
-.services-item-3 a {
+.services-item-3 {
     background-color: var(--basic-yellow);
+    line-height: 18px;
+    text-transform: uppercase;
 }
 
 /* About company */
@@ -159,7 +161,7 @@ list-style: none;
 .numbers-item {
     text-transform: uppercase;
     text-align: center;
-    align-items: center;
+    align-items: right;
     font-weight: 700;
 }
 
@@ -167,4 +169,10 @@ list-style: none;
     font-weight: 700;
     font-size: 45px;
     line-height: 64px;
+}
+
+/* Button */
+
+.button {
+    
 }
