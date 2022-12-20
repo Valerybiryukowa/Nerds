@@ -9,6 +9,15 @@
     --basic-black: #000000;
     --basic-green: #00CA74;
     --basic-yellow: #EFC849;
+    --basic-coral-undertone-2: #E74246;
+    --basic-coral-undertone-3: #D7373B;
+    --basic-green-2: #00BC6C;
+    --basic-green-3: #00AA62;
+    --basic-yellow-2: #EAB534;
+    --basic-yellow-3: #E5A722;
+    --basic-grey: #666666;
+    --basic-light-grey: #D7DCDE;
+    --basic-grey-2: #B4B9BB;
 }
 
 /* Global */
@@ -123,16 +132,47 @@ list-style: none;
     text-transform: uppercase;
 }
 
+.services-item-1:hover,
+.services-item-1:focus {
+    background-color: var(--basic-coral-undertone-2);
+    color: var(--basic-white);
+}
+
+.services-item-1:active {
+    background-color: var(--basic-coral-undertone-3);
+    opacity: 0.3;
+}
+
 .services-item-2 {
     background-color: var(--basic-green);
     line-height: 18px;
     text-transform: uppercase;
 }
 
+.services-item-2:hover,
+.services-item-2:focus {
+    background-color: var(--basic-green-2);
+}
+
+.services-item-2:active {
+    background-color: var(--basic-green-3);
+    opacity: 0.3;
+}
+
 .services-item-3 {
     background-color: var(--basic-yellow);
     line-height: 18px;
     text-transform: uppercase;
+}
+
+.services-item-3:hover,
+.services-item-3:focus {
+    background-color: var(--basic-yellow-2);
+}
+
+.services-item-3:active {
+    background-color: var(--basic-yellow-3);
+    opacity: 0.3;
 }
 
 /* About company */
@@ -174,5 +214,56 @@ list-style: none;
 /* Button */
 
 .button {
-    
+    font: inherit;
+    text-align: center;
+    color: var(--basic-white);
+    vertical-align: middle;
+    text-transform: uppercase;
+    border: none;
+}
+
+.button:hover,
+.button:focus {
+    background-color: var(--basic-coral-undertone-2);
+}
+
+.button:active {
+    background-color: var(--basic-coral-undertone-3);
+    opacity: 0.3;
+}
+
+/* Clients */
+
+.client-base img:hover,
+.client-base img:focus {
+    background-color: var(--basic-black);
+}
+
+.client-base img:active {
+    opacity: 0.1;
+}
+
+/* Contacts */
+
+.contacts-phone {
+    color: inherit;
+}
+
+.write-item input {
+    font: inherit;
+    background-color: transparent;
+    border: 2px solid var(--basic-light-grey);
+}
+
+.write-item input:hover,
+.write-item input:focus {
+    border-color: var(--basic-grey-2);
+}
+
+.write-item input:active {
+    border-color: var(--basic-black);
+}
+
+.write-item input:invalid {
+    border-color: var(--basic-coral-undertone-2);
 }
