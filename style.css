@@ -55,6 +55,15 @@ img {
     background-color: var(--basic-warm-grey);
 }
 
+.main-header-logo:hover,
+.main-header-logo:focus {
+    opacity: 0.7; 
+}
+
+.main-header-logo:active {
+    opacity: 0.3;
+}
+
 .main-navigation-wrapper {
     background-color: var(--basic-warm-grey);
 }
@@ -80,6 +89,13 @@ img {
 .login-basket a:focus {
     background-color: var(--basic-coral);
 }
+
+.site-navigation a:active,
+.login-basket a:active {
+    background-color: var(--basic-black);
+    opacity: 0.3;
+}
+
 
 /* Features */
 
@@ -262,7 +278,12 @@ list-style: none;
 .write-info {
     font-size: 45px;
     line-height: 52.73px;
-    font-weight: 700px;
+    font-weight: 700;
+}
+
+.write-item label {
+    line-height: 18px;
+    font-weight: 700;
 }
 
 .write-item input {
