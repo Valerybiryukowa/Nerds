@@ -18,6 +18,7 @@
     --basic-grey: #666666;
     --basic-light-grey: #D7DCDE;
     --basic-grey-2: #B4B9BB;
+    --basic-black-2: #444444;
 }
 
 /* Global */
@@ -220,6 +221,7 @@ list-style: none;
     vertical-align: middle;
     text-transform: uppercase;
     border: none;
+    background-color: var(--basic-coral);
 }
 
 .button:hover,
@@ -249,9 +251,23 @@ list-style: none;
     color: inherit;
 }
 
+.write-to-us {
+    color: var(--basic-white);
+    background-color: var(--basic-white);
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+    width: 960px;
+    height: 590px;
+}
+
+.write-info {
+    font-size: 45px;
+    line-height: 52.73px;
+    font-weight: 700px;
+}
+
 .write-item input {
     font: inherit;
-    background-color: transparent;
+    background-color: var(--basic-white);
     border: 2px solid var(--basic-light-grey);
 }
 
@@ -266,4 +282,39 @@ list-style: none;
 
 .write-item input:invalid {
     border-color: var(--basic-coral-undertone-2);
+}
+
+/* Main footer */
+
+.footer-social {
+    text-align: left;
+}
+
+.footer-social ul {
+    list-style: none;
+}
+
+.footer-info h2 {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+}
+
+.footer-info p {
+    line-height: 22px;
+    color: var(--basic-black-2);
+}
+/* Social button */
+
+.social-button {
+    color: inherit;
+}
+
+.social-button img:hover,
+.social-button img:focus {
+    background-color: var(--basic-coral-undertone-2);
+}
+
+.social-button img:active {
+    background-color: var(--basic-coral-undertone-3);
 }
