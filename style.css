@@ -32,7 +32,7 @@ body {
     line-height: 24px;
     font-weight: 400;
     color: var(--basic-black);
-    text-transform: lowercase;
+    text-transform: none;
     background-color: var(--basic-white);
     background-position: top right;
 }
@@ -64,10 +64,6 @@ img {
     opacity: 0.3;
 }
 
-.main-navigation-wrapper {
-    background-color: var(--basic-warm-grey);
-}
-
 .site-navigation {
     list-style: none;
 }
@@ -79,19 +75,20 @@ img {
 /* User navigation */
 
 .site-navigation a,
-.login-basket a {
+.login-basket {
     color: var(--basic-black);
+    text-transform: uppercase;
 }
 
 .site-navigation a:hover,
 .site-navigation a:focus,
-.login-basket a:hover,
-.login-basket a:focus {
+.login-basket:hover,
+.login-basket:focus {
     background-color: var(--basic-coral);
 }
 
 .site-navigation a:active,
-.login-basket a:active {
+.login-basket:active {
     background-color: var(--basic-black);
     opacity: 0.3;
 }
@@ -101,6 +98,7 @@ img {
 
 .features {
     background-color: var(--basic-warm-grey);
+    text-transform: none;
 }
 
 .features-list {
@@ -130,6 +128,7 @@ list-style: none;
 
 .services-list {
     list-style: none;
+    text-transform: none;
 }
 
 .sevices-item {
@@ -147,6 +146,7 @@ list-style: none;
     background-color: var(--basic-coral);
     line-height: 18px;
     text-transform: uppercase;
+    color: var(--basic-white);
 }
 
 .services-item-1:hover,
@@ -164,6 +164,7 @@ list-style: none;
     background-color: var(--basic-green);
     line-height: 18px;
     text-transform: uppercase;
+    color: var(--basic-white);
 }
 
 .services-item-2:hover,
@@ -180,6 +181,7 @@ list-style: none;
     background-color: var(--basic-yellow);
     line-height: 18px;
     text-transform: uppercase;
+    color: var(--basic-white);
 }
 
 .services-item-3:hover,
@@ -196,6 +198,7 @@ list-style: none;
 
 .company-list {
     list-style: none;
+    text-transform: none;
 }
 
 .company-item h3 {
@@ -216,16 +219,22 @@ list-style: none;
 }
 
 .numbers-item {
-    text-transform: uppercase;
     text-align: center;
     align-items: right;
     font-weight: 700;
+    text-transform: uppercase;
 }
 
-.number p {
+.number-item {
+    text-transform: none;
+    text-align: center;
+}
+
+.number {
     font-weight: 700;
     font-size: 45px;
     line-height: 64px;
+    text-align: center;
 }
 
 /* Button */
@@ -279,11 +288,13 @@ list-style: none;
     font-size: 45px;
     line-height: 52.73px;
     font-weight: 700;
+    text-transform: none;
 }
 
 .write-item label {
     line-height: 18px;
     font-weight: 700;
+    text-transform: none;
 }
 
 .write-item input {
@@ -319,11 +330,13 @@ list-style: none;
     font-size: 36px;
     line-height: 36px;
     font-weight: 700;
+    text-transform: none;
 }
 
 .footer-info p {
     line-height: 22px;
     color: var(--basic-black-2);
+    text-transform: none;
 }
 /* Social button */
 
