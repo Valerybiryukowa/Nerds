@@ -48,11 +48,20 @@ img {
 
 /* Main navigation */
 
+.index-columns {
+    color: var(--basic-black);
+    background-color: var(--basic-warm-grey);
+}
+
 .main-navigation {
     font-size: 16px;
     line-height: 30px;
-    color: var(--basic-black);
-    background-color: var(--basic-warm-grey);
+}
+
+.index-columns h1 {
+    font-size: 55px;
+    line-height: 55px;
+    text-transform: none;
 }
 
 .main-header-logo:hover,
@@ -68,9 +77,6 @@ img {
     list-style: none;
 }
 
-.site-navigation-current a:not([href]) {
-    background-color: var(--basic-warm-grey);
-}
 
 /* User navigation */
 
