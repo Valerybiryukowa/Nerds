@@ -358,3 +358,25 @@ list-style: none;
 .social-button img:active {
     background-color: var(--basic-coral-undertone-3);
 }
+
+
+/* List-of-templates */
+
+.sort-list {
+    list-style: none;
+}
+
+.sort-list a {
+    color: var(--basic-black);
+    opacity: 0.3;
+    text-transform: uppercase;
+}
+
+sort-item-current {
+    color: var(--basic-black);
+}
+
+.sort-list:hover,
+.sort-list:focus {
+    opacity: 0,6;
+}
