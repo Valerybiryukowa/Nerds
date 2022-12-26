@@ -19,6 +19,7 @@
     --basic-light-grey: #D7DCDE;
     --basic-grey-2: #B4B9BB;
     --basic-black-2: #444444;
+    --basic-black-3: #283136;
 }
 
 /* Global */
@@ -372,11 +373,57 @@ list-style: none;
     text-transform: uppercase;
 }
 
-sort-item-current {
+.sort-list a:hover,
+.sort-list a:focus {
+    opacity: 0.6;
+}
+
+.sort-list a:active {
     color: var(--basic-black);
 }
 
-.sort-list:hover,
-.sort-list:focus {
-    opacity: 0,6;
+.templates-list {
+    list-style: none;
 }
+
+.templates-list h3 {
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+}
+
+.templates-item-price .button {
+    line-height: 18px;
+    text-align: center;
+}
+
+/* Filter */
+
+.filter legend {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+.filter ul {
+    list-style: none;
+    line-height: 20px;
+    list-style: none;
+}
+
+.filter-input-radio:hover + label,
+.filter-input-radio:focus + label {
+    color: var(--basic-black-3);
+}
+
+.filter-input-checkbox:hover + label,
+.filter-input-checkbox:focus + label {
+    color: var(--basic-black-3);
+}
+
+.filter-input-radio:disabled + label,
+.filter-input-radio:disabled + label {
+    color: var(--basic-black-3);
+    opacity: 0.3;
+}
+
