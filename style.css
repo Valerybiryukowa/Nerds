@@ -1,3 +1,14 @@
+/* Fonts */
+
+@font-face {
+    font-family: "Roboto";
+    src:
+    url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Roboto:wght@400;500;700&display=swap.woff2") format(woff2),
+    url("https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Roboto:wght@400;500;700&display=swap.woff") format(woff);
+    font-weight: 400;
+    font-style: normal;
+}
+
 /* Variables */
 
 :root {
