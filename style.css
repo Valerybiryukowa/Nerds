@@ -405,9 +405,23 @@ list-style: none;
     text-transform: uppercase;
 }
 
+.templates-item h3:hover,
+.templates-item h3:focus {
+    color: var(--basic-coral);
+}
+
+.templates-item h3:active {
+    opacity: 0.3;
+    color: var(--basic-black);
+}
+
 .templates-item-price .button {
     line-height: 18px;
     text-align: center;
+}
+
+.templates-item-price .button:active {
+    color: var(--basic-coral-undertone-3);
 }
 
 /* Filter */
@@ -421,7 +435,6 @@ list-style: none;
 .filter ul {
     list-style: none;
     line-height: 20px;
-    list-style: none;
 }
 
 .filter-input-radio:hover + label,
@@ -438,6 +451,12 @@ list-style: none;
 .filter-input-radio:disabled + label {
     color: var(--basic-black-3);
     opacity: 0.3;
+}
+
+.show {
+    color: var(--basic-black);
+    background-color: var(--basic-warm-grey);
+    border-radius: 3px;
 }
 
 /* Pagination */
