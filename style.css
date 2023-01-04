@@ -426,29 +426,39 @@ list-style: none;
 
 /* Filter */
 
-.filter legend {
+.form legend {
     font-size: 18px;
     line-height: 30px;
     font-weight: 700;
 }
 
-.filter ul {
+.form ul {
     list-style: none;
     line-height: 20px;
 }
 
-.filter-input-radio:hover + label,
-.filter-input-radio:focus + label {
-    color: var(--basic-black-3);
+.form-input-radio:hover + label {
+    color: var(--basic-dark-grey);
 }
 
-.filter-input-checkbox:hover + label,
+.form-input-radio:focus + label {
+    color: var(--basic-black);
+
+}
+
+.form-input-radio:disabled + label,
+.form-input-radio:disabled + label {
+    color: var(--basic-black-3);
+    opacity: 0.3;
+}
+
+.form-input-checkbox:hover + label,
 .filter-input-checkbox:focus + label {
-    color: var(--basic-black-3);
+    color: var(--basic-dark-grey);
 }
 
-.filter-input-radio:disabled + label,
-.filter-input-radio:disabled + label {
+.form-input-checkbox:disabled + label,
+.form-input-checkbox:disabled + label {
     color: var(--basic-black-3);
     opacity: 0.3;
 }
