@@ -165,7 +165,6 @@ img {
 .features {
     background-color: var(--basic-warm-grey);
     text-transform: none;
-    outline: 5px solid rgba(255, 0, 0 , 0.3);
     margin-bottom: 80px;
 }
 
@@ -179,7 +178,6 @@ img {
 
 .feature-item {
     text-align: left;
-    outline: 5px solid rgba(0, 255, 255 , 0.3);
 }
 
 .feature-item h2 {
@@ -206,6 +204,10 @@ img {
 .services-list {
     list-style: none;
     text-transform: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 80px;
+    margin-top: 80px;
 }
 
 .sevices-item {
@@ -273,9 +275,18 @@ img {
 
 /* About company */
 
+.info {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
 .company-list {
     list-style: none;
     text-transform: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 73px;
+    padding-bottom: 73px;
 }
 
 .company-item h3 {
@@ -293,6 +304,8 @@ img {
 
 .numbers-list {
     list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .numbers-item {
@@ -300,11 +313,13 @@ img {
     align-items: right;
     font-weight: 700;
     text-transform: uppercase;
+    padding-top: 73px;
 }
 
 .number-item {
     text-transform: none;
     text-align: center;
+    padding-bottom: 73px;
 }
 
 .number {
