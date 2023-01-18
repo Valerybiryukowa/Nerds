@@ -160,6 +160,14 @@ img {
     padding: 0 10px;
 }
 
+.container h1 {
+    text-align: center;
+}
+
+/* Grid for pages */
+
+
+
 /* Features */
 
 .features {
@@ -278,6 +286,7 @@ img {
 .info {
     display: grid;
     grid-template-columns: 2fr 1fr;
+    column-gap: 154px;
 }
 
 .company-list {
@@ -306,10 +315,12 @@ img {
     list-style: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+    padding: 0;
 }
 
 .numbers-item {
-    text-align: center;
+    text-align: left;
     align-items: right;
     font-weight: 700;
     text-transform: uppercase;
@@ -362,11 +373,26 @@ img {
     opacity: 0.1;
 }
 
+.clients {
+    margin-bottom: 80px;
+}
+
+.client-base {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
 /* Contacts */
 
 .contacts-phone {
     color: inherit;
 }
+
+.useful {
+    width: 1440px;
+    margin-top: 80px;
+}
+
 
 .write-to-us {
     color: var(--basic-white);
@@ -410,8 +436,25 @@ img {
 
 /* Main footer */
 
+.main-footer {
+    margin-top: 80px;
+}
+
 .footer-social {
     text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.bonus {
+    margin: 0;
+    width: 1100px;
+}
+
+.social-network {
+    width: 180px;
+    margin: 0;
+    justify-self: left;
 }
 
 .footer-social ul {
