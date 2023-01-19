@@ -102,6 +102,10 @@ img {
     background-color: var(--basic-warm-grey);
 }
 
+.index-columns h1 {
+    text-align: center;
+}
+
 .main-navigation {
     display: grid;
     justify-content: stretch;
@@ -160,13 +164,27 @@ img {
     padding: 0 10px;
 }
 
-.container h1 {
-    text-align: center;
+/* Grid for pages */
+ 
+.container {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    outline: 5px solid rgba(255, 0, 0, 0.7);
+    outline-offset: -5px;
 }
 
-/* Grid for pages */
+.filter {
+    outline: 5px solid rgba(0, 0, 255, 0.7);
+    outline-offset: -5px;
+}
 
+.container .list-of-templates {
+    outline: 5px solid rgba(0, 0, 255, 0.2);
+}
 
+.container .filter {
+    margin-top: 55px;
+}
 
 /* Features */
 
