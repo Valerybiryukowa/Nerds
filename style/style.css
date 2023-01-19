@@ -166,24 +166,25 @@ img {
 
 /* Grid for pages */
  
-.container {
+.page-catalog {
     display: grid;
     grid-template-columns: 260px 1fr;
-    outline: 5px solid rgba(255, 0, 0, 0.7);
-    outline-offset: -5px;
 }
 
-.filter {
-    outline: 5px solid rgba(0, 0, 255, 0.7);
-    outline-offset: -5px;
-}
-
-.container .list-of-templates {
-    outline: 5px solid rgba(0, 0, 255, 0.2);
-}
-
-.container .filter {
+.filter .price {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 48px;
     margin-top: 55px;
+}
+
+.list-of-templates h3 {
+    margin-bottom: 48px;
+    margin-top: 55px;
+}
+
+.list-of-templates {
+    margin-left: 140px;
 }
 
 /* Features */
