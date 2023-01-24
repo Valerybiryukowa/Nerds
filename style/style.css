@@ -63,6 +63,9 @@
 
 .main-header {
     margin-bottom: 70px;
+
+    outline: 5px solid rgba(0, 255, 0, 0.3);
+  outline-offset: -5px;
 }
 
 .main-header-bar {
@@ -70,17 +73,25 @@
 }
 
 .main-header-logo {
-    width: 1158px;
+    width: 160px;
     margin: 0 auto;
     padding: 0 10px;
+
+    outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
 }
 
 .main-navigation-wrapper {
-    display: grid;
-    grid-template-columns: 1fr min-content;
-    width: 1158px;
     margin: 0 auto;
     padding: 0 10px;
+
+    width: 100%;
+    margin-bottom: 9px;
+}
+
+.main-navigation-wrapper .site-navigation {
+    display: flex;
+    justify-content: space-between;
 }
 
 a {
@@ -110,10 +121,11 @@ img {
 }
 
 .main-navigation {
-    display: grid;
-    justify-content: stretch;
     font-size: 16px;
     line-height: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .index-columns h1 {
@@ -135,10 +147,18 @@ img {
     list-style: none;
     margin: 0;
     padding: 0;
+
+    outline: 5px solid rgba(0, 255, 255, 0.3);
+  outline-offset: -5px;
 }
 
 
 /* User navigation */
+
+.user-navigation {
+    outline: 5px solid rgba(255, 0, 255, 0.3);
+  outline-offset: -5px;
+}
 
 .site-navigation a,
 .login-basket {
