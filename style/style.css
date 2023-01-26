@@ -88,6 +88,11 @@
     justify-content: space-between;
 }
 
+.page-body .main-navigation {
+    align-items: flex-start;
+    flex-direction: row;
+}
+
 a {
     text-decoration: none;
 }
@@ -112,6 +117,11 @@ img {
 
 .index-columns h1 {
     text-align: center;
+}
+
+.page-body .main-header-logo {
+    width: 160px;
+    height: 65,02px;
 }
 
 .main-navigation {
@@ -182,11 +192,78 @@ img {
     padding: 0 10px;
 }
 
-/* Grid for pages */
+/* Catalog */
  
-.page-catalog {
-    display: grid;
-    grid-template-columns: 260px 1fr;
+.templates-list {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin:0;
+    margin-bottom: 55px;
+}
+
+.templates-item {
+    width: 359px;
+    min-height: 578px;
+    margin-right: 41px;
+    margin-bottom: 30px;
+}
+
+.templates-item h3 {
+    margin-top: 26px;
+    margin-right: 144px;
+    margin-bottom: 12px;
+    margin-left: 145px;
+}
+
+.templates-item img {
+    width: 359px;
+    height: 578px;
+    margin: 0;
+}
+
+.templates-item-price {
+    display: flex;
+    margin-bottom: 43px;
+    margin-right: 80px;
+    margin-left: 80px;
+    margin-top: 32px;
+}
+
+.filter {
+    width: 260px;
+}
+
+.form fieldset {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 48px;
+    border: none;
+}
+
+.form fieldset:first-child {
+    margin-bottom: 54px;
+}
+
+.form fieldset .grid {
+    margin-bottom: 43px;
+}
+
+.form legend {
+    margin-bottom: 14px;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.form ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    line-height: 20px;
+}
+
+fieldset .slidecontainer {
+    margin-top: 48px;
 }
 
 .filter .price {
@@ -577,6 +654,7 @@ img {
     color: var(--basic-black-2);
     text-transform: none;
 }
+
 /* Social button */
 
 .social-button {
