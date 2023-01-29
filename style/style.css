@@ -193,7 +193,23 @@ img {
 }
 
 /* Catalog */
+
+.page-catalog .container {
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    align-content: start;
+}
  
+
+.page-catalog .container sort-list {
+    grid-column: 9 / -1;
+}
+
+.catalog {
+    margin-left: 141px;
+
+}
+
 .templates-list {
     display: flex;
     flex-wrap: wrap;
@@ -232,6 +248,7 @@ img {
 
 .filter {
     width: 260px;
+    margin-right: 140px;
 }
 
 .form fieldset {
@@ -276,6 +293,7 @@ fieldset .slidecontainer {
 .list-of-templates h3 {
     margin-bottom: 48px;
     margin-top: 55px;
+    margin-left: 140px;
 }
 
 .list-of-templates {
@@ -330,12 +348,13 @@ fieldset .slidecontainer {
 .services-list {
     list-style: none;
     text-transform: none;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-bottom: 80px;
     margin-top: 80px;
+    margin-right: 100px;
     margin: 0px;
     padding: 0px;
-
-    justify-content: space-between;
 }
 
 .sevices-item {
@@ -344,7 +363,6 @@ fieldset .slidecontainer {
 }
 
 .services-item p {
-    margin: 0 10px;
     margin-bottom: 32px;
 }
 
@@ -466,14 +484,15 @@ fieldset .slidecontainer {
 
 .numbers-list {
     list-style: none;
-    
+    display: flex;
+    justify-content: space-between;
     margin: 0;
     padding: 0;
 }
 
 .numbers-item {
-    text-align: left;
-    align-items: right;
+    text-align: center;
+    align-items: center;
     font-weight: 700;
     text-transform: uppercase;
     padding-top: 73px;
@@ -570,6 +589,11 @@ fieldset .slidecontainer {
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
     width: 960px;
     height: 590px;
+    box-sizing: border-box;
+}
+
+.write-form {
+    display: grid;
 }
 
 .write-info {
@@ -770,6 +794,8 @@ fieldset .slidecontainer {
 
 .pagination-list {
     list-style: none;
+    display: flex;
+    flex-direction: row;
 }
 
 .pagination-item a {
