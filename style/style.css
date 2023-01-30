@@ -198,6 +198,7 @@ img {
     display: grid;
     grid-template-columns: 260px 1fr;
     align-content: start;
+    width: 1440px;
 }
  
 
@@ -485,7 +486,8 @@ fieldset .slidecontainer {
 .numbers-list {
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    align-items: stretch;
     margin: 0;
     padding: 0;
 }
@@ -503,12 +505,17 @@ fieldset .slidecontainer {
     margin-bottom: 31px;
     text-align: center;
     align-items: center;
+    position: absolute;
 }
 
 .number-item {
     text-transform: none;
     text-align: center;
     padding-bottom: 73px;
+}
+
+.number-item p {
+    align-items: center;
 }
 
 .number {
@@ -593,7 +600,7 @@ fieldset .slidecontainer {
 }
 
 .write-form {
-    display: grid;
+    
 }
 
 .write-info {
@@ -609,6 +616,8 @@ fieldset .slidecontainer {
 .write-item {
     margin-top: 0;
     margin-bottom: 47px;
+    display: grid;
+    grid-template-rows: ;
 }
 
 .write-item label {
