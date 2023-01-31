@@ -102,6 +102,19 @@ img {
     height: auto;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 /* Grid */
 
 .page {
@@ -152,17 +165,24 @@ img {
     list-style: none;
     margin: 0;
     padding: 0;
-}
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 50px;
 
+    outline: 5px solid #ff0000;
+}
 
 /* User navigation */
 
 .user-navigation {
   max-width: 164px;
+
+  outline: 5px solid #ff0000;
 }
 
 .user-navigation .login-basket {
     padding-left: 74px;
+    position: relative;
 }
 
 .site-navigation a,
@@ -182,6 +202,31 @@ img {
 .login-basket:active {
     background-color: var(--basic-black);
     opacity: 0.3;
+}
+
+.site-navigation a,
+.user-navigation a {
+    display: block;
+    padding: 25px 20px;
+}
+
+/* login-basket */
+
+.user-navigation .login-basket {
+    padding-left: 74px;
+    position: relative;
+}
+
+.login-basket::before {
+    content: "";
+    position: absolute;
+    top: px;
+    right: px;
+    width: 15px;
+    height: 15px;
+    background-image: url(img/login-basket.svg);
+    background-repeat: no-repeat;
+    background-position: 0 0;
 }
 
 /* Container */
@@ -321,7 +366,7 @@ fieldset .slidecontainer {
     text-align: left;
 }
 
-.feature-item h2 {
+.feature-item h3 {
     font-size: 55px;
     line-height: 55px;
     font-weight: 500;
@@ -498,6 +543,8 @@ fieldset .slidecontainer {
     font-weight: 700;
     text-transform: uppercase;
     padding-top: 73px;
+
+    
 }
 
 .numbers-item h4 {
@@ -506,16 +553,22 @@ fieldset .slidecontainer {
     text-align: center;
     align-items: center;
     position: absolute;
+
+    top: 2940px;
+
 }
 
 .number-item {
     text-transform: none;
     text-align: center;
     padding-bottom: 73px;
+
+    margin-top: 10px;
 }
 
 .number-item p {
     align-items: center;
+
 }
 
 .number {
@@ -523,6 +576,7 @@ fieldset .slidecontainer {
     font-size: 45px;
     line-height: 64px;
     text-align: center;
+     margin-top: 60px;
 }
 
 /* Button */
@@ -617,7 +671,6 @@ fieldset .slidecontainer {
     margin-top: 0;
     margin-bottom: 47px;
     display: grid;
-    grid-template-rows: ;
 }
 
 .write-item label {
