@@ -230,11 +230,11 @@ img {
 .login-basket::before {
     content: "";
     position: absolute;
-    top: 27px;
-    left: 24px;
+    top: 32px;
+    left: 30px;
     width: 15px;
     height: 15px;
-    background-image: url("img/login-basket.svg");
+    background-image: url("img css/login-basket.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
 }
@@ -400,7 +400,8 @@ fieldset .slidecontainer {
 .services {
     margin-bottom: 80px;
 
-    background-image: url("img/line.png");
+    background-image: url("img css/line.png");
+    background-repeat: no-repeat;
 }
 
 .services-list {
