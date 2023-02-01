@@ -172,6 +172,16 @@ img {
     outline: 5px solid #ff0000;
 }
 
+(это может убрать)
+.site-navigation-current {
+    position: relative;
+  }
+  
+.site-navigation-current a:not([href]) {
+    background-color: var(--basic-black);
+  }
+
+
 /* User navigation */
 
 .user-navigation {
@@ -220,11 +230,11 @@ img {
 .login-basket::before {
     content: "";
     position: absolute;
-    top: px;
-    right: px;
+    top: 27px;
+    left: 24px;
     width: 15px;
     height: 15px;
-    background-image: url(img/login-basket.svg);
+    background-image: url("img/login-basket.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
 }
@@ -389,6 +399,8 @@ fieldset .slidecontainer {
 
 .services {
     margin-bottom: 80px;
+
+    background-image: url("img/line.png");
 }
 
 .services-list {
