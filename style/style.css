@@ -691,6 +691,7 @@ fieldset .slidecontainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 960px;
 
     padding-right: 40px;
     padding-bottom: 34px;
@@ -702,6 +703,8 @@ fieldset .slidecontainer {
     line-height: 52.73px;
     font-weight: 700;
     text-transform: none;
+    padding-top: 63px;
+    padding-left: 100px;
 
     margin: 0;
     margin-bottom: 37px;
@@ -713,6 +716,34 @@ fieldset .slidecontainer {
 
     outline: 5px solid #ff0000;
 }
+
+.write-item-3 {
+    margin-top: 0;
+    margin-bottom: 47px;
+
+    outline: 5px solid #ff0000;
+}
+
+.write-item-3 label {
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: none;
+    display: block;
+    margin-bottom: 9px;
+}
+
+.write-item-3 input {
+    font: inherit;
+    background-color: var(--basic-white);
+    border: 2px solid var(--basic-light-grey);
+    width: 760px;
+    height: 118px;
+    padding-top: 16px;
+    padding-right: 14px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+}
+
 
 .write-item label {
     line-height: 18px;
@@ -733,7 +764,6 @@ fieldset .slidecontainer {
     padding-left: 16px;
 }
 
-
 .write-item input:hover,
 .write-item input:focus {
     border-color: var(--basic-grey-2);
@@ -744,6 +774,19 @@ fieldset .slidecontainer {
 }
 
 .write-item input:invalid {
+    border-color: var(--basic-coral-undertone-2);
+}
+
+.write-item-3 input:hover,
+.write-item-3 input:focus {
+    border-color: var(--basic-grey-2);
+}
+
+.write-item-3 input:active {
+    border-color: var(--basic-black);
+}
+
+.write-item-3 input:invalid {
     border-color: var(--basic-coral-undertone-2);
 }
 
