@@ -859,13 +859,17 @@ fieldset .slidecontainer {
 
 }
 
-.social-button img:hover,
-.social-button img:focus {
+.social-button:hover,
+.social-button:focus {
     background-color: var(--basic-coral-undertone-2);
 }
 
-.social-button img:active {
+.social-button:active {
     background-color: var(--basic-coral-undertone-3);
+}
+
+.social-button:active path {
+    opacity: 0.3;
 }
 
 
