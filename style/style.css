@@ -33,6 +33,7 @@
     --basic-black-3: #283136;
     --basic-grey-3: #DFDFDF;
     --basic-grey-4: #D5D5D5;
+    --basic-grey-5: #E1E1E1;
 }
 
 /* Global */
@@ -575,7 +576,6 @@ fieldset .slidecontainer {
     position: absolute;
 
     top: 2940px;
-
 }
 
 .number-item {
@@ -691,7 +691,7 @@ fieldset .slidecontainer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 960px;
+    padding-left: 100px;
 
     padding-right: 40px;
     padding-bottom: 34px;
@@ -713,15 +713,11 @@ fieldset .slidecontainer {
 .write-item {
     margin-top: 0;
     margin-bottom: 47px;
-
-    outline: 5px solid #ff0000;
 }
 
 .write-item-3 {
     margin-top: 0;
     margin-bottom: 47px;
-
-    outline: 5px solid #ff0000;
 }
 
 .write-item-3 label {
@@ -742,6 +738,14 @@ fieldset .slidecontainer {
     padding-right: 14px;
     padding-bottom: 16px;
     padding-left: 16px;
+}
+
+.write-to-us .button {
+    width: 259px;
+    padding-top: 17px;
+    padding-bottom: 15px;
+    padding-left: 83px;
+    padding-right: 83px;
 }
 
 
@@ -837,6 +841,22 @@ fieldset .slidecontainer {
 
 .social-button {
     color: inherit;
+    width: 81px;
+    height: 81px;
+    background-color: var(--basic-grey-5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-social ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+
 }
 
 .social-button img:hover,
