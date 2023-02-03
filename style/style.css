@@ -169,8 +169,6 @@ img {
     display: flex;
     flex-wrap: wrap;
     min-height: 50px;
-
-    outline: 5px solid #ff0000;
 }
 
 (это может убрать)
@@ -187,8 +185,6 @@ img {
 
 .user-navigation {
   max-width: 164px;
-
-  outline: 5px solid #ff0000;
 }
 
 .user-navigation .login-basket {
@@ -201,6 +197,11 @@ img {
     color: var(--basic-black);
     text-transform: uppercase;
 }
+
+.site-navigation li:focus {
+    color: var(--basic-coral);
+} 
+
 
 .site-navigation a:hover,
 .site-navigation a:focus,
@@ -355,6 +356,22 @@ fieldset .slidecontainer {
 
 .list-of-templates {
     margin-left: 140px;
+}
+
+/* Sort-list */
+
+.sort-list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+}
+
+.sort-list li {
+    position: relative;
+    margin-right: 25px;
 }
 
 /* Features */
