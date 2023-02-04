@@ -34,6 +34,8 @@
     --basic-grey-3: #DFDFDF;
     --basic-grey-4: #D5D5D5;
     --basic-grey-5: #E1E1E1;
+    --basic-black-4: #231F20;
+    --basic-grey-6: #A6A6A6;
 }
 
 /* Global */
@@ -373,6 +375,17 @@ fieldset .slidecontainer {
     position: relative;
     margin-right: 25px;
 }
+
+.sort-list::after {
+    content: "";
+    position: absolute;
+    width: 11px;
+    height: 10px;
+    background-color: var(--basic-black-4);
+    
+
+}
+
 
 /* Features */
 
