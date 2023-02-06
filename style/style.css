@@ -209,12 +209,12 @@ img {
 .site-navigation a:focus,
 .login-basket:hover,
 .login-basket:focus {
-    background-color: var(--basic-coral);
+    color: var(--basic-coral);
 }
 
 .site-navigation a:active,
 .login-basket:active {
-    background-color: var(--basic-black);
+    color: var(--basic-black);
     opacity: 0.3;
 }
 
@@ -267,7 +267,22 @@ img {
 
 .catalog {
     margin-left: 141px;
+}
 
+.templates-item a {
+    display: flex;
+    flex-direction: column;
+    color: var(--basic-black);
+}
+
+.templates-item p {
+    color: var(--basic-grey);
+    order: 1;
+    margin-bottom: 32px;
+    margin-left: 52px;
+    margin-right: 53px;
+    text-align: center;
+    align-items: center;
 }
 
 .templates-list {
@@ -283,13 +298,17 @@ img {
     min-height: 578px;
     margin-right: 41px;
     margin-bottom: 30px;
+    background-color: var(--basic-warm-grey);
 }
 
 .templates-item h3 {
+    order: 1;
     margin-top: 26px;
     margin-right: 144px;
     margin-bottom: 12px;
     margin-left: 145px;
+    text-align: center;
+    align-items: center;
 }
 
 .templates-item img {
@@ -299,11 +318,13 @@ img {
 }
 
 .templates-item-price {
-    display: flex;
     margin-bottom: 43px;
     margin-right: 80px;
     margin-left: 80px;
     margin-top: 32px;
+    border-radius: 3px;
+    text-align: center;
+    align-items: center;
 }
 
 
@@ -396,14 +417,49 @@ fieldset .slidecontainer {
     margin-top: 55px;
 }
 
-.peculiarities-item label {
+.form fieldset {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 30px;
+    border: none;
+}
+
+.form fieldset:first-child {
+    margin-bottom: 35px;
+  }
+
+  .form legend {
+    margin-bottom: 14px;
+    font-size: 18px;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
+
+  .form ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    line-height: 20px;
+  }
+
+  .grid-item {
+    margin-bottom: 20px;
+    padding-left: 42px;
+  }
+
+  .peculiarities-item {
+    margin-bottom: 20px;
+    padding-left: 42px;
+  }
+
+.peculiarities-list label {
     position: relative;
     display: block;
     cursor: pointer;
     user-select: none;
 }
 
-.filter-input-checkbox + label::before {
+.form-input-checkbox + label::before {
     content: "";
     position: absolute;
     width: 23px;
@@ -413,14 +469,13 @@ fieldset .slidecontainer {
     top: 0;
 }
 
-.filter-input-checkbox:checked + label::after {
+.form-input-checkbox:checked + label::after {
     content: "";
     position: absolute;
     top: 4px;
-    left: -38px;
-    width: 15px;
-    height: 15px;
-    background-color: #00BC6C;
+    left: -35px;
+    width: 21px;
+    height: 17px;
     background-image: url("img css/checkbox shape.svg");
     background-repeat: no-repeat;
     background-position: 0 0;
@@ -433,22 +488,22 @@ fieldset .slidecontainer {
     user-select: none;
 }
 
-.filter-input-radio + label::before {
+.form-input-radio + label::before {
     content: "";
     position: absolute;
-    width: 23px;
-    height: 23px;
+    width: 25px;
+    height: 25px;
     border: 2px solid #4D4D4D;
     left: -42px;
     top: 0;
     border-radius: 50%;
 }
 
-.filter-input-radio:checked + label::after {
+.form-input-radio:checked + label::after {
     content: "";
     position: absolute;
-    top: 5px;
-    left: -36px;
+    top: 10px;
+    left: -32px;
     width: 9px;
     height: 9px;
     background-color: var(--basic-dark-grey);
@@ -662,8 +717,6 @@ fieldset .slidecontainer {
     font-weight: 700;
     text-transform: uppercase;
     padding-top: 73px;
-
-    
 }
 
 .numbers-item h4 {
@@ -1039,7 +1092,7 @@ fieldset .slidecontainer {
 }
 
 .form-input-radio:focus + label {
-    color: var(--basic-black);
+    color: var(--basic-black-3);
 
 }
 
@@ -1049,9 +1102,13 @@ fieldset .slidecontainer {
     opacity: 0.3;
 }
 
-.form-input-checkbox:hover + label,
-.filter-input-checkbox:focus + label {
+.form-input-checkbox:hover + label {
     color: var(--basic-dark-grey);
+}
+
+.form-input-checkbox:focus + label {
+    color: var(--basic-black-3);
+
 }
 
 .form-input-checkbox:disabled + label,
@@ -1066,17 +1123,44 @@ fieldset .slidecontainer {
     border-radius: 3px;
 }
 
+
 /* Pagination */
 
 .pagination-list {
     list-style: none;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;
 }
 
 .pagination-item a {
+    display: block;
+    padding-top: 17px;
+    padding-left: 20px;
+    padding-right: 15px;
+    padding-bottom: 15px;
     color: var(--basic-black);
     background-color: var(--basic-warm-grey);
+}
+
+.pagination-item-current a {
+    display: block;
+    padding-top: 17px;
+    padding-left: 20px;
+    padding-right: 15px;
+    padding-bottom: 15px;
+    color: var(--basic-black);
+    background-color: var(--basic-white);
+    border: 3px solid #DBDBDB;
+}
+
+.pagination-item {
+    margin-right: 11px;
+}
+
+.pagination-item:last-child {
+    margin-right: 0;
 }
 
 .pagination-item a:hover,
