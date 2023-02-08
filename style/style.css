@@ -36,6 +36,7 @@
     --basic-grey-5: #E1E1E1;
     --basic-black-4: #231F20;
     --basic-grey-6: #A6A6A6;
+    --basic-grey-7: #C1C1C1;
 }
 
 /* Global */
@@ -618,6 +619,8 @@ fieldset .slidecontainer {
 
 .feature-item {
     text-align: left;
+
+    display: none;
 }
 
 .slide-title {
@@ -640,6 +643,21 @@ fieldset .slidecontainer {
     bottom: 96px;
     
     z-index: 20;
+    display: flex;
+    width: 88px;
+    justify-content: space-between;
+}
+
+
+.slider-controls button {
+    padding: 0;
+    width: 18px;
+    height: 18px;
+    background-color: var(--basic-white);
+    border: 2px solid #C1C1C1;
+    box-sizing: border-box;
+    border-radius: 50%;
+    cursor: pointer;
 }
 
 .feature-item p {
