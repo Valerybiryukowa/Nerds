@@ -251,6 +251,7 @@ img {
     padding: 0 10px;
 }
 
+
 /* Catalog */
 
 .page-catalog .container {
@@ -592,6 +593,19 @@ fieldset .slidecontainer {
     background-color: var(--basic-warm-grey);
     text-transform: none;
     margin-bottom: 80px;
+    min-width: 1157px;
+    position: relative;
+    padding-top: 78px;
+    text-align: left;
+    align-items: center;
+
+    background-image: url("img css/nerds-index-slide1 1.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.features p {
+    color: var(--basic-black-3);
 }
 
 .features-list {
@@ -606,10 +620,26 @@ fieldset .slidecontainer {
     text-align: left;
 }
 
-.feature-item h3 {
+.slide-title {
     font-size: 55px;
     line-height: 55px;
     font-weight: 500;
+    width: 538px;
+    margin-bottom: 25px;
+}
+
+.slide-button {
+    cursor: pointer;
+    padding-left: 54px;
+    padding-right: 54px;
+    line-height: 18px;
+}
+
+.slider-controls {
+    position: absolute;
+    bottom: 96px;
+    
+    z-index: 20;
 }
 
 .feature-item p {
