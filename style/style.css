@@ -600,9 +600,20 @@ fieldset .slidecontainer {
     text-align: left;
     align-items: center;
 
-    background-image: url("img css/nerds-index-slide1 1.png");
     background-repeat: no-repeat;
     background-position: top right;
+}
+
+.features-1 {
+    background-image: url("img css/nerds-index-slide1\ 1.png");
+}
+
+.features-2 {
+    background-image: url("img css/nerds-index-slide2\ 1.png");
+}
+
+.features-3 {
+    background-image: url("img css/nerds-index-slide3\ 1.png");
 }
 
 .features p {
@@ -621,6 +632,15 @@ fieldset .slidecontainer {
     text-align: left;
 
     display: none;
+}
+
+.slide-current {
+    display: block;
+}
+
+.slider-controls .current {
+    border: 2px solid #C1C1C1;
+    box-sizing: border-box;
 }
 
 .slide-title {
@@ -654,8 +674,6 @@ fieldset .slidecontainer {
     width: 18px;
     height: 18px;
     background-color: var(--basic-white);
-    border: 2px solid #C1C1C1;
-    box-sizing: border-box;
     border-radius: 50%;
     cursor: pointer;
 }
