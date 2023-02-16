@@ -67,6 +67,7 @@
 
 .main-header {
     margin-bottom: 70px;
+    width: 1160px;
 }
 
 .main-header-bar {
@@ -77,6 +78,9 @@
     width: 160px;
     margin: 0 auto;
     padding: 0 10px;
+    margin-right: 202px;
+
+    margin-top: 49px;
 }
 
 .main-navigation-wrapper {
@@ -172,6 +176,8 @@ img {
     display: flex;
     flex-wrap: wrap;
     min-height: 50px;
+
+    margin-top: 75px;
 }
 
 (это может убрать)
@@ -188,6 +194,9 @@ img {
 
 .user-navigation {
   max-width: 164px;
+
+  margin-top: 75px;
+
 }
 
 .user-navigation .login-basket {
@@ -951,6 +960,25 @@ fieldset .slidecontainer {
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+/* Modal-map */
+
+.modal-map {
+    display: ;
+}
+
+/* Modal */
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
 /* Contacts */
 
 .contacts-phone {
@@ -973,11 +1001,13 @@ fieldset .slidecontainer {
 }
 
 .write-to-us {
-    color: var(--basic-black);
-    background-color: var(--basic-white);
+    display: none;
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
+    background-color: var(--basic-white);
+    color: var(--basic-black);
     width: 960px;
     height: 590px;
+    bottom: 180px;
 }
 
 .write-form {
@@ -1011,6 +1041,36 @@ fieldset .slidecontainer {
 .write-item-3 {
     margin-top: 0;
     margin-bottom: 47px;
+}
+
+.write-close {
+    position: absolute;
+    top: 78px;
+    right: 90px;
+    width: 21px;
+    height: 21px;
+    border: 0;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.write-close::before,
+.write-close::after {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 2px;
+    width: 21px;
+    height: 21px;
+    background-color: #FB565A4D;
+}
+
+.write-close::before {
+    transform: rotate(45deg);
+}
+
+.write-close::after {
+    transform: rotate(45deg);
 }
 
 .write-item-3 label {
