@@ -326,6 +326,8 @@ img {
     width: 359px;
     height: 578px;
     margin: 0;
+
+    object-fit: contain;
 }
 
 .templates-item-price {
@@ -1060,9 +1062,9 @@ fieldset .slidecontainer {
     position: absolute;
     top: 6px;
     left: 2px;
-    width: 21px;
-    height: 21px;
-    background-color: #FB565A4D;
+    width: 19px;
+    height: 3px;
+    background-color: var(--basic-coral-undertone);
 }
 
 .write-close::before {
@@ -1070,7 +1072,7 @@ fieldset .slidecontainer {
 }
 
 .write-close::after {
-    transform: rotate(45deg);
+    transform: rotate(-45deg);
 }
 
 .write-item-3 label {
