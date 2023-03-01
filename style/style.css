@@ -42,7 +42,7 @@
 /* Global */
 
 .page-body {
-    min-width: 960px;
+    min-width: 1300px;
     margin: 0;
     padding: 0;
     font-family: "Roboto", Arial, sans-serif;
@@ -59,15 +59,15 @@
     grid-template-rows: min-content 1fr min-content;
     align-content: start;
 
-    position: relative;
-    padding-bottom: 100px;
+    /* position: relative; */
+    /* padding-bottom: 100px; */
 }
 
 /* Main header */
 
 .main-header {
-    margin-bottom: 70px;
-    width: 1160px;
+    /* margin-bottom: 9px; */
+    /* width: 1160px; */
 }
 
 .main-header-bar {
@@ -133,8 +133,9 @@ img {
 
 .index-columns {
     color: var(--basic-black);
-    background-color: var(--basic-warm-grey);
+    width: 1440px;
 }
+
 
 .index-columns h1 {
     text-align: center;
@@ -152,6 +153,16 @@ img {
     flex-direction: row;
     align-items: center;
 }
+
+.main-navigation .main-navigation-wrapper {
+    display: flex;
+}
+
+.main-header-bar .main-navigation-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
 
 .index-columns h1 {
     font-size: 55px;
@@ -176,19 +187,16 @@ img {
     display: flex;
     flex-wrap: wrap;
     min-height: 50px;
-
     margin-top: 75px;
 }
 
-(это может убрать)
 .site-navigation-current {
     position: relative;
-  }
-  
+}
+
 .site-navigation-current a:not([href]) {
     background-color: var(--basic-black);
   }
-
 
 /* User navigation */
 
@@ -196,7 +204,6 @@ img {
   max-width: 164px;
 
   margin-top: 75px;
-
 }
 
 .user-navigation .login-basket {
@@ -611,6 +618,7 @@ fieldset .slidecontainer {
     text-align: left;
     align-items: center;
 
+
     background-repeat: no-repeat;
     background-position: top right;
 }
@@ -705,7 +713,11 @@ fieldset .slidecontainer {
 /* Services */
 
 .services {
-    margin-bottom: 80px;
+    min-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 140px;
+    padding-right: 200px;
 
     background-image: url("img css/line.png");
     background-repeat: no-repeat;
@@ -804,10 +816,21 @@ fieldset .slidecontainer {
     display: flex;
     justify-content: space-between;
     margin-bottom: 73px;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 140px;
+    padding-right: 126px;
+
+    background-image: url("img css/line.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
 }
 
 .about-company {
   width: 651px;
+
+  margin-right: 149px;
 }
 
 .company-list {
@@ -848,6 +871,8 @@ fieldset .slidecontainer {
 
 .numbers {
   width: 360px;
+
+  margin-right: 140px;
 }
 
 .numbers img {
@@ -955,11 +980,33 @@ fieldset .slidecontainer {
 
 .clients {
     margin-bottom: 80px;
+
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 140px;
+    padding-right: 141px;
+
+
+    background-image: url("img css/line.png");
+    background-repeat: no-repeat;
+    background-position: bottom center;
 }
 
 .client-base {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.client-base img {
+    margin-right: 95px;
+
+    margin-bottom: 44px;
+}
+
+/* .client-base::after { */
+    background-image: url("img css/line small.png");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 /* Modal-map */
@@ -1202,6 +1249,7 @@ fieldset .slidecontainer {
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 50%;
 }
 
 .footer-social ul {
