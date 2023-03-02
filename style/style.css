@@ -980,10 +980,9 @@ fieldset .slidecontainer {
 
 .clients {
     margin-bottom: 80px;
-
     margin-left: auto;
     margin-right: auto;
-    padding-left: 140px;
+    padding-left: 141px;
     padding-right: 141px;
 
 
@@ -1003,16 +1002,58 @@ fieldset .slidecontainer {
     margin-bottom: 44px;
 }
 
-/* .client-base::after { */
+.client-base::after {
+    content: "";
+    position: absolute;
+    top: px;
+    left: 419px;
+    width: 2px;
+    height: 52px;
     background-image: url("img css/line small.png");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 0 0;
 }
+
+.client-base::before {
+    content: "";
+    position: absolute;
+    top: px;
+    left: 719px;
+    width: 2px;
+    height: 52px;
+    background-image: url("img css/line small 2.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.client-base::before {
+    content: "";
+    position: absolute;
+    top: px;
+    left: 1019px;
+    width: 2px;
+    height: 52px;
+    background-image: url("img css/line small 3.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+
 
 /* Modal-map */
 
 .modal-map {
     display: ;
+}
+
+/* .map img { */
+    position: relative;
+    z-index: 1;
+}
+
+/* .contacts { */
+    position: relative;
+    z-index: 1;
 }
 
 /* Modal */
