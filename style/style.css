@@ -664,6 +664,9 @@ fieldset .slidecontainer {
 .slider-controls .current {
     border: 2px solid #C1C1C1;
     box-sizing: border-box;
+    width: 8px;
+    height: 8px;
+    position: absolute; (если это убрать вернется к изначальному состоянию)
 }
 
 .slide-title {
@@ -700,6 +703,7 @@ fieldset .slidecontainer {
     border-radius: 50%;
     cursor: pointer;
 }
+
 
 .feature-item p {
     margin: 0 10px;
