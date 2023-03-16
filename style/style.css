@@ -662,11 +662,19 @@ fieldset .slidecontainer {
 }
 
 .slider-controls .current {
-    border: 2px solid #C1C1C1;
     box-sizing: border-box;
-    width: 8px;
-    height: 8px;
-    position: absolute; (если это убрать вернется к изначальному состоянию)
+    border: 0px solid #C1C1C1;
+}
+
+.slider-controls .current::after {
+    content: "";
+    border: 2px solid #C1C1C1;
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    top: 5px;
+    left: 5px;
+    position: absolute;
 }
 
 .slide-title {
@@ -688,6 +696,8 @@ fieldset .slidecontainer {
     position: absolute;
     bottom: 96px;
     left: 520px;
+    padding: 0;
+    margin: 0;
     z-index: 20;
     display: flex;
     width: 88px;
@@ -697,6 +707,7 @@ fieldset .slidecontainer {
 
 .slider-controls button {
     padding: 0;
+    position: relative;
     width: 18px;
     height: 18px;
     background-color: var(--basic-white);
