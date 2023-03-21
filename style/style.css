@@ -262,9 +262,10 @@ img {
 /* Container */
 
 .container {
-    width: 1158px;
+    width: 1157px;
     margin: 0 auto;
     padding: 0 10px;
+    /* height: 431px; */
 }
 
 
@@ -735,6 +736,7 @@ fieldset .slidecontainer {
     background-image: url("img css/line.png");
     background-repeat: no-repeat;
     background-position: bottom center;
+    width: 1158px;
 }
 
 .services-list {
@@ -758,6 +760,7 @@ fieldset .slidecontainer {
 
 .services-item p {
     margin-bottom: 32px;
+    line-height: 24px;
 }
 
 .services-item h3 {
