@@ -189,15 +189,15 @@
     <form class="write-form" action="https//echo.htmlacademy.ru" method="post">
         <p class="write-item">
             <label for="write-name">Ваше имя:</label>
-            <input id="write-name" type="text" name="name" placeholder="Имя Фамилия">
+            <input id="write-name" type="text" name="name" placeholder="Имя Фамилия" required>
         </p>
         <p class="write-item">
             <label for="write-email">Ваш email:</label>
-            <input id="write-email" type="text" name="email" placeholder="email@example.com">
+            <input id="write-email" type="text" name="email" placeholder="email@example.com" required>
         </p>
         <p class="write-item-3">
             <label for="write-text">Текст письма:</label>
-            <input id="write-text" type="text" name="text" placeholder="В свободной форме">
+            <input id="write-text" type="text" name="text" placeholder="В свободной форме" required>
         </p>
 <button class="button" type="submit">Отправить</button>
     </form>
@@ -247,17 +247,40 @@
     const basket = document.querySelector('.login-basket');
     const popup = document.querySelector('.write-to-us');
     const close = document.querySelector('.write-close');
+    
 
     basket.addEventListener('click', function (evt) {
         evt.preventDefault();
-        popup.classList.add('write-show');
+        popup.classList.add('modal-show');
+        name.focus();
     });
 
     close.addEventListener('click', function (evt) {
         evt.preventDefault();
-        popup.classList.remove('write-show');
+        popup.classList.remove('modal-show');
     });
     
+</script>
+
+<script>
+
+    
+    const form = popup.querySelector('form');
+
+    const name = popup.querySelector('[name=name]');
+    const email = popup.querySelector('[name=email]');
+    const text = popup.querySelector('[name=text]');
+
+
+    form.addEventListener('submit', function (evt) {
+        if (!name.value || !email.value) {
+            evt.preventDefault();
+            console.log('Нужно ввести имя и эмэйл');
+        }
+    });
+    
+
+
 </script>
 
     </body>

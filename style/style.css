@@ -1110,13 +1110,17 @@ fieldset .slidecontainer {
 }
 
 .write-to-us {
-    display: none;
+    display: block;
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
     background-color: var(--basic-white);
     color: var(--basic-black);
     width: 960px;
     height: 590px;
     bottom: 180px;
+}
+
+.modal-show {
+    display: block;
 }
 
 .write-form {
