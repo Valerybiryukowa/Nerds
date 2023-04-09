@@ -1,5 +1,4 @@
-<script>
-    
+<script> 
     const basket = document.querySelector(".login-basket");
     const popup = document.querySelector(".write-to-us");
     const close = document.querySelector(".write-close");
@@ -14,8 +13,8 @@
     
     
     try {
-        storage = localStorage.getItem("surname");
-    } catch (err){
+        storage = localStorage.getItem("surnam");
+    } catch (err) {
         isStorageSupport = false;
     }
 
@@ -59,5 +58,4 @@
             }
         }
     });
-
-</script>
+    </script>
