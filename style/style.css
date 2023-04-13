@@ -133,6 +133,7 @@ img {
 .index-columns {
     color: var(--basic-black);
     width: 1440px;
+    height: 615px;
 }
 
 
@@ -624,15 +625,15 @@ fieldset .slidecontainer {
 }
 
 .features-1 {
-    background-image: url("img css/nerds-index-slide1\ 1.png");
+    background-image: url("img css/nerds-index-slide1 1.png");
 }
 
 .features-2 {
-    background-image: url("img css/nerds-index-slide2\ 1.png");
+    background-image: url("img css/nerds-index-slide2 1.png");
 }
 
 .features-3 {
-    background-image: url("img css/nerds-index-slide3\ 1.png");
+    background-image: url("img css/nerds-index-slide3 1.png");
 }
 
 .features p {
@@ -735,10 +736,11 @@ fieldset .slidecontainer {
     min-width: 1100px;
     padding-left: 140px;
     padding-right: 200px;
+    margin-top: 80px;
 
     background-image: url("img css/line.png");
     background-repeat: no-repeat;
-    background-position: bottom center;
+    background-position: 41% 100%;
     width: 1158px;
 }
 
@@ -748,7 +750,6 @@ fieldset .slidecontainer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin-bottom: 80px;
-    margin-top: 80px;
     margin-right: 100px;
     margin: 0px;
     padding: 0px;
@@ -758,7 +759,6 @@ fieldset .slidecontainer {
 
 .sevices-item {
     text-align: right;
-    width: 300px;
 }
 
 .services-item p {
@@ -843,12 +843,11 @@ fieldset .slidecontainer {
 
     background-image: url("img css/line.png");
     background-repeat: no-repeat;
-    background-position: bottom center;
+    background-position: 34% 100%;
 }
 
 .about-company {
   width: 651px;
-
   margin-right: 149px;
 }
 
@@ -857,8 +856,8 @@ fieldset .slidecontainer {
     text-transform: none;
     margin: 0;
     padding: 0;
-    padding-top: 73px;
-    padding-bottom: 73px;
+    margin-top: 73px;
+    margin-bottom: 73px;
 }
 
 .company-item {
@@ -876,6 +875,10 @@ fieldset .slidecontainer {
 
 .company-item p {
     margin-bottom: 40px;
+
+    background-image: url("img css/Rectangle 10.png");
+    background-repeat: no-repeat;
+    background-position: 1px center;
 }
 
 .company-item h4 {
@@ -1007,7 +1010,7 @@ fieldset .slidecontainer {
 
     background-image: url("img css/line.png");
     background-repeat: no-repeat;
-    background-position: bottom center;
+    background-position: 34% 100%;
 }
 
 .client-base {
@@ -1030,7 +1033,6 @@ fieldset .slidecontainer {
     height: 52px;
     background-image: url("img css/line small.png");
     background-repeat: no-repeat;
-    background-position: 0 0;
 }
 
 .client-base::before {
@@ -1110,7 +1112,7 @@ fieldset .slidecontainer {
 }
 
 .write-to-us {
-    display: block;
+    display: none;
     box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.4);
     background-color: var(--basic-white);
     color: var(--basic-black);
@@ -1119,28 +1121,13 @@ fieldset .slidecontainer {
     bottom: 180px;
 }
 
-@keyframes bounce {
-    0% { transform: translateY(-2000px); }
-    70% { transform: translateY(30px); }
-    90% { transform: translateY(-10px); }
-    100% { transform: translateY(0); }
-}
-
 .modal-show {
     display: block;
-    animation-name: bounce;
-    animation-duration: 0.6s;
-}
-
-@keyframes shake {
-    0%, 100% { transform: translateX(0); }
-    10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
-    20%, 40%, 60%, 80% { transform: translateX(10px); }
+    animation: bounce 0.6s;
 }
 
 .modal-error {
-    animation-name: shake;
-    animation-duration: 0.6s;
+    animation: shake 0.6s;
 }
 
 .write-form {
@@ -1278,6 +1265,45 @@ fieldset .slidecontainer {
 
 .write-item-3 input:invalid {
     border-color: var(--basic-coral-undertone-2);
+}
+
+/* Animations */
+
+@keyframes bounce {
+    0% { transform: translateY(-2000px); 
+    }
+
+    70% { transform: translateY(30px); 
+    }
+
+    90% { transform: translateY(-10px); 
+    }
+
+    100% { transform: translateY(0); 
+    }
+}
+
+
+@keyframes shake {
+    0%, 
+    100% { 
+        transform: translateX(0); 
+    }
+
+    10%, 
+    30%, 
+    50%, 
+    70%, 
+    90% { 
+        transform: translateX(-10px); 
+    }
+
+    20%, 
+    40%, 
+    60%, 
+    80% { 
+        transform: translateX(10px); 
+    }
 }
 
 /* Main footer */
