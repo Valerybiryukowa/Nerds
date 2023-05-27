@@ -612,7 +612,7 @@ fieldset .slidecontainer {
 .features {
     background-color: var(--basic-warm-grey);
     text-transform: none;
-    min-width: 1157px;
+    max-width: 1157px;
     position: relative;
     text-align: left;
     align-items: center;
@@ -721,7 +721,7 @@ fieldset .slidecontainer {
 
 
 .feature-item p {
-    margin: 0 10px;
+    margin: 0;
     margin-bottom: 38px;
 }
 
@@ -733,24 +733,23 @@ fieldset .slidecontainer {
 /* Services */
 
 .services {
-    min-width: 1100px;
-    padding-left: 140px;
-    padding-right: 200px;
+    max-width: 1100px;
+    margin-left: 140px;
+    margin-right: 200px;
     margin-top: 80px;
 
     background-image: url("img css/line.png");
     background-repeat: no-repeat;
     background-position: 41% 100%;
-    width: 1158px;
+    width: 1170px;
 }
 
 .services-list {
     list-style: none;
     text-transform: none;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 80px;
-    margin-right: 100px;
     margin: 0px;
     padding: 0px;
 
@@ -759,6 +758,7 @@ fieldset .slidecontainer {
 
 .sevices-item {
     text-align: right;
+    padding-right: 100px;
 }
 
 .services-item p {
@@ -829,12 +829,25 @@ fieldset .slidecontainer {
     opacity: 0.3;
 }
 
+.services-item-1,
+.services-item-2, button {
+    display: inline-block;
+    padding: 17px 40px;
+    border: none;
+    border-radius: 3px;
+}
+
+.services-item-3, button {
+    display: inline-block;
+    padding: 17px 40px;
+}
+
+
 /* About company */
 
 .info {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 73px;
 
     margin-left: auto;
     margin-right: auto;
@@ -847,8 +860,9 @@ fieldset .slidecontainer {
 }
 
 .about-company {
-  width: 651px;
-  margin-right: 149px;
+    max-width: 651px;
+    padding-right: 149px;
+    margin-bottom: 73px;
 }
 
 .company-list {
@@ -856,8 +870,6 @@ fieldset .slidecontainer {
     text-transform: none;
     margin: 0;
     padding: 0;
-    margin-top: 73px;
-    margin-bottom: 73px;
 }
 
 .company-item {
@@ -870,31 +882,40 @@ fieldset .slidecontainer {
     font-weight: 500;
 
     margin: 0;
-    margin-bottom: 32px;
+    padding-bottom: 32px;
 }
 
 .company-item p {
-    margin-bottom: 40px;
+    padding-bottom: 40px;
+    line-height: 24px;
+}
+
+.company-item-2 p {
+    line-height: 24px;
+    margin: 24px;
 
     background-image: url("img css/Rectangle 10.png");
     background-repeat: no-repeat;
-    background-position: 1px center;
+    background-position: 10% 50%;
 }
 
-.company-item h4 {
+.company-item-2 h4 {
     font-weight: 700;
     text-transform: uppercase;
+    font-size: 16px;
+    line-height: 24px;
 
     margin: 0;
-    margin-bottom: 23px;
+    padding-bottom: 23px;
 }
 
 /* Numbers */
 
 .numbers {
-  width: 360px;
-
+  max-width: 379px;
   margin-right: 140px;
+  margin-top: -39px;
+  margin-bottom: 75px;
 }
 
 .numbers img {
@@ -906,48 +927,38 @@ fieldset .slidecontainer {
     list-style: none;
     display: flex;
     flex-direction: row;
-    align-items: stretch;
     margin: 0;
     padding: 0;
 }
 
-.numbers-item {
+.numbers-item h4 {
+    margin: 0;
+    /*top: 47%;*/
+    padding-bottom: 31px;
     text-align: center;
     align-items: center;
     font-weight: 700;
     text-transform: uppercase;
-    padding-top: 73px;
+    padding-top: 37px;
 }
 
-.numbers-item h4 {
-    margin: 0;
-    margin-bottom: 31px;
-    text-align: center;
-    align-items: center;
-    position: absolute;
-
-    top: 2940px;
-}
-
-.number-item {
+.numbers-item {
     text-transform: none;
-    text-align: center;
-    padding-bottom: 73px;
-
-    margin-top: 10px;
+    margin-right: 22px;
 }
 
-.number-item p {
-    align-items: center;
-
+.numbers-item-description {
+    padding-top: 10px;
+    font-weight: 400;
+    text-align: left;
+    line-height: 18px;
 }
 
-.number {
+.number  {
     font-weight: 700;
     font-size: 45px;
     line-height: 64px;
     text-align: center;
-     margin-top: 60px;
 }
 
 /* Button */
@@ -976,19 +987,6 @@ fieldset .slidecontainer {
     opacity: 0.3;
 }
 
-.services-item-1,
-.services-item-2, button {
-    display: inline-block;
-    padding: 17px 40px;
-    border: none;
-    border-radius: 3px;
-}
-
-.services-item-3, button {
-    display: inline-block;
-    padding: 17px 40px;
-}
-
 /* Clients */
 
 .client-base img:hover,
@@ -1001,16 +999,13 @@ fieldset .slidecontainer {
 }
 
 .clients {
-    margin-bottom: 80px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 141px;
-    padding-right: 141px;
+    margin-left: 140px;
+    margin-right: 142px;
 
 
     background-image: url("img css/line.png");
     background-repeat: no-repeat;
-    background-position: 34% 100%;
+    background-position: -3% 100%;
 }
 
 .client-base {
@@ -1098,7 +1093,6 @@ fieldset .slidecontainer {
 
 .useful {
     width: 1440px;
-    margin-top: 80px;
 }
 
 .contacts {
